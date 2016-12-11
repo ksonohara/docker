@@ -25,7 +25,7 @@ ENV AD_DOMAIN test
 
 RUN systemctl disable firewalld
 
-#RUN yum install -y epel-release
+RUN yum install -y epel-release
 
 RUN yum update -y
 
