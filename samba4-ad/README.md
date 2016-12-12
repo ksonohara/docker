@@ -46,7 +46,14 @@ Samba 4 ActiveDirectory docker container
                 -e "AD_REALM=test.local" \
                 -e "AD_DOMAIN=test"
 
+# Other
 
-# Related Site
+##Copyright and license
+    Copyright 1997-2015 K.Sonohara.
+    - Code released under[GNU GENERAL PUBLIC LICENSE Version 3](https://github.com/ksonohara/docker/blob/master/LICENSE)
 
-    [ExpertSoftware Inc.](https://www.e-software.company "ExpertSoftware Inc.")
+##Author
+
+    K.Sonohara
+    - GitHub: https://github.com/ksonohara
+    - Homepage: [ExpertSoftware Inc.](https://www.e-software.company "ExpertSoftware Inc.")

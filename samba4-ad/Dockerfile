@@ -3,7 +3,7 @@ MAINTAINER Expert Software Inc. / https://www.e-software.company
 
 LABEL name="Samba 4 AD/DC" \
       vendor="ExpertSoftware Inc." \
-      license="GPLv2" \
+      license="GPLv3" \
       build-date="20161215"
 
 ENV DOCKER_DEBUG 0
