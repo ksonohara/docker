@@ -1,6 +1,6 @@
 # Summary
 
-Samba 4 ActiveDirectory docker container
+Samba 4 ActiveDirectory docker container.
 
 # Usage
 
