@@ -25,7 +25,9 @@ ENV AD_DOMAIN test
 
 RUN systemctl disable firewalld
 
-#RUN yum install -y epel-release
+RUN yum clean all
+
+RUN yum install -y epel-release
 
 RUN yum install -y krb5-workstation \
                    yum-plugin-priorities \
