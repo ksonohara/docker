@@ -45,7 +45,7 @@ RUN wget http://wing-net.ddo.jp/wing/7/EL7.wing.repo \
     && sed -i 's@enabled=0@enabled=1@g' EL7.wing.repo \
     && mv EL7.wing.repo /etc/yum.repos.d/
 
-RUN yum install -y samba45 samba45-clients ldb-tools samba45-winbind-clients samba45-winbind
+RUN yum install -y samba45 samba45-clients ldb-tools samba45-winbind-clients samba45-winbind || true
 
 RUN yum clean all
 
