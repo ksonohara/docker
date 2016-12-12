@@ -4,10 +4,7 @@ Docker containeres.
 
 # List
 
-- samba4-ad
-| Name | Summary |
-|------------:|:-------------------------------|
-| samba4-ad | Samba 4 ActiveDirectory |
+- samba4-ad : Samba 4 ActiveDirectory
 
 # Other
 
