@@ -29,7 +29,7 @@ RUN systemctl disable firewalld
 
 RUN yum update -y
 
-RUN yum install -y krb5-workstation
+RUN yum install -y krb5-workstation | true
 RUN yum install -y yum-plugin-priorities
 RUN yum install -y wget
 RUN yum install -y authconfig
