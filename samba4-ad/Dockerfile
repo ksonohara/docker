@@ -35,8 +35,8 @@ RUN yum update -y
 
 RUN yum clean all
 
-RUN yum install -y krb5-workstation || yum install -y krb5-workstation
 RUN yum install -y authconfig || yum install -y authconfig
+RUN yum install -y krb5-workstation
 RUN yum install -y yum-plugin-priorities \
                    wget 
 
