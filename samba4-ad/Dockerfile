@@ -36,8 +36,8 @@ RUN yum update -y
 RUN yum clean all
 
 RUN yum install -y authconfig gnutls nettle trousers cups-libs avahi-libs || true
-RUN yum install -y krb5-workstation
-RUN yum install -y yum-plugin-priorities wget
+RUN yum install -y krb5-workstation || true
+RUN yum install -y yum-plugin-priorities wget || true
 
 RUN yum clean all
 
