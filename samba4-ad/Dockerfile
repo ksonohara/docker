@@ -29,12 +29,18 @@ RUN yum clean all
 
 RUN yum install -y epel-release
 
+RUN yum clean all
+
+RUN yum update -y
+
+RUN yum clean all
+
 RUN yum install -y krb5-workstation \
                    yum-plugin-priorities \
                    wget \
                    authconfig
 
-RUN yum update -y
+RUN yum clean all
 
 RUN wget http://wing-net.ddo.jp/wing/7/EL7.wing.repo \
     && sed -i 's@enabled=0@enabled=1@g' EL7.wing.repo \
