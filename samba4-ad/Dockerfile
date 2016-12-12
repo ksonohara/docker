@@ -29,7 +29,10 @@ RUN systemctl disable firewalld
 
 RUN yum update -y
 
-RUN yum install -y krb5-workstation yum-plugin-priorities wget authconfig
+RUN yum install -y krb5-workstation
+RUN yum install -y yum-plugin-priorities
+RUN yum install -y wget
+RUN yum install -y authconfig
 
 RUN wget http://wing-net.ddo.jp/wing/7/EL7.wing.repo \
     && sed -i 's@enabled=0@enabled=1@g' EL7.wing.repo \
