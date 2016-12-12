@@ -25,7 +25,7 @@ ENV AD_DOMAIN test
 
 RUN systemctl disable firewalld
 
-RUN yum install -y epel-release
+#RUN yum install -y epel-release
 
 RUN yum update -y
 
@@ -65,5 +65,4 @@ COPY setup.sh /.docker/setup.sh
 COPY service.sh /.docker/service.sh
 RUN chmod +x /.docker/*.sh
 
-#ENTRYPOINT ["/bin/bash", "/entrypoint.sh"]
 ENTRYPOINT ["/entrypoint.sh"]
