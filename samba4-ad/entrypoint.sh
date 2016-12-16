@@ -1,5 +1,6 @@
 #!/bin/bash
 
+ls -lrta / .docker/*
 source /.docker/config
 
 /.docker/init.sh
