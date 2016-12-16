@@ -12,6 +12,7 @@ ENV DNS_DOMAIN test.local
 ENV AD_PASSWORD noPassw0rd!
 ENV AD_REALM test.local
 ENV AD_DOMAIN test
+ENV AD_NOSTRONGAUTH 1
 
 # for Japanease
 #RUN yum -y reinstall glibc-common

@@ -13,7 +13,9 @@ samba-tool domain provision \
   --server-role=dc \
   --dns-backend=SAMBA_INTERNAL
 
-sed -i "5a ldap server require strong auth = no" /etc/samba/smb.conf
+if [ $AD_NOSTRONGAUTH = 1 ]; then
+  sed -i "5a ldap server require strong auth = no" /etc/samba/smb.conf
+fi
 
 rm -f /etc/krb5.conf
 ln -s /var/lib/samba/private/krb5.conf /etc/krb5.conf
