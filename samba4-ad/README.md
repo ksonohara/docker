@@ -14,6 +14,7 @@ Samba 4 ActiveDirectory docker container.
     AD_PASSWORD noPassw0rd!
     AD_REALM test.local
     AD_DOMAIN test
+    AD_NOSTRONGAUTH 1
 
 ### --port
 
