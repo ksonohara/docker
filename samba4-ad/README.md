@@ -2,6 +2,10 @@
 
 Samba 4 ActiveDirectory docker container.
 
+# Description
+
+Include centos:7 image.
+
 # Usage
 
 ## Configuration
