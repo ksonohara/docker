@@ -74,8 +74,7 @@ RUN chmod +x /entrypoint.sh
 COPY init.sh /.docker/init.sh
 COPY setup.sh /.docker/setup.sh
 COPY service.sh /.docker/service.sh
-RUN chmod +x /.docker/init.sh
-RUN chmod +x /.docker/setup.sh
-RUN chmod +x /.docker/service.sh
+RUN chmod +x /.docker
+RUN chmod +x /.docker/*.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
