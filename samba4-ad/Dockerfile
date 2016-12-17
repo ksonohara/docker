@@ -76,6 +76,5 @@ COPY setup.sh /.docker/setup.sh
 COPY service.sh /.docker/service.sh
 RUN chmod 755 /.docker
 RUN chmod 755 /.docker/*.sh
-ls -lrta / .docker/*
 
 ENTRYPOINT ["/entrypoint.sh"]
