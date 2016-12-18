@@ -47,7 +47,7 @@ Include centos:7 image.
                 -e "DOCKER_DEBUG=1" \
                 -e "DNS_FORWARD=8.8.8.8" \
                 -e "DNS_DOMAIN=test.local" \
-                -e "AD_PASSWORD=noPassw0rd!" \
+                -e "AD_PASSWORD=noPassw0rd777" \
                 -e "AD_REALM=test.local" \
                 -e "AD_DOMAIN=test"
 
