@@ -24,7 +24,11 @@ Include centos:7 image.
 
 ## Examples
 
-### Start Docker Container
+### Pull docker container
+
+    docker pull sonohara/centos7-base
+
+### Start docker container
 
     It's base container. this not run.
 
