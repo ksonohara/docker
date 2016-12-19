@@ -31,9 +31,9 @@ RUN yum clean all
 
 RUN mkdir /.docker
 
+ENV DOCKER_DEBUG 0
+
 COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
-
-ENV DOCKER_DEBUG 0
 
 ENTRYPOINT ["/entrypoint.sh"]
