@@ -18,7 +18,7 @@ RUN echo include_only=.jp >> /etc/yum/pluginconf.d/fastestmirror.conf
 
 RUN systemctl disable firewalld
 
-#RUN yum install -y epel-release
+RUN yum install -y epel-release
 RUN yum install -y yum-plugin-priorities wget unzip || true
 
 RUN yum update -y || true
