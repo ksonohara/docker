@@ -14,10 +14,10 @@ Include centos:7 image.
 
     DOCKER_DEBUG 0
     DNS_FORWARD 8.8.8.8
-    DNS_DOMAIN test.local
-    AD_PASSWORD noPassw0rd!
-    AD_REALM test.local
-    AD_DOMAIN test
+    DNS_DOMAIN sambaad.local
+    AD_PASSWORD PASS0rd123
+    AD_REALM sambaad.local
+    AD_DOMAIN SAMBAAD
     AD_NOSTRONGAUTH 1
 
 ### --port
@@ -43,7 +43,7 @@ Include centos:7 image.
 
 ### Start Docker Container
 
-    sudo docker run -it -p 389:389 -d sonohara/samba4-ad \
+    sudo docker run --privileged -it -p 389:389 -d sonohara/samba4-ad \
                 -e "DOCKER_DEBUG=1" \
                 -e "DNS_FORWARD=8.8.8.8" \
                 -e "DNS_DOMAIN=test.local" \

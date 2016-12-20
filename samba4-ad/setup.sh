@@ -2,6 +2,7 @@
 
 echo DOMAIN=$DNS_DOMAIN >> /etc/sysconfig/network-scripts/ifcfg-ens3
 
+rm -rf /etc/samba/smb.conf
 rm -rf /var/lib/samba/private/*
 rm -rf /var/lib/samba/sysvol/*
 
@@ -11,7 +12,8 @@ samba-tool domain provision \
   --domain=$AD_DOMAIN \
   --adminpass=$AD_PASSWORD \
   --server-role=dc \
-  --dns-backend=SAMBA_INTERNAL
+  --dns-backend=SAMBA_INTERNAL \
+  --use-xattrs=yes
 
 if [ $AD_NOSTRONGAUTH = 1 ]; then
   sed -i "5a ldap server require strong auth = no" /etc/samba/smb.conf

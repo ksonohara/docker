@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 if [ $DOCKER_DEBUG = 1 ]; then
   uname -a
   set
