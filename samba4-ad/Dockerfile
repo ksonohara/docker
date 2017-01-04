@@ -18,7 +18,7 @@ RUN yum install -y samba45 \
                    samba45-client samba45-common-tools samba45-dc samba45-pidl samba45-python \
                    samba45-winbind-krb5-locator perl-Parse-Yapp perl-Test-Base python2-crypto || true
 
-RUN yum clean all
+RUN yum clean all | true
 
 RUN sed -i 's@PEERDNS=yes@PEERDNS=no@g' /etc/sysconfig/network-scripts/ifcfg-ens3
 RUN sed -i 's@IPV6_PEERDNS=yes@IPV6_PEERDNS=no@g' /etc/sysconfig/network-scripts/ifcfg-ens3
