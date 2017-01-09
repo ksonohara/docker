@@ -17,8 +17,6 @@ LABEL name="CentOS 7.2.1511" \
 
 RUN echo include_only=.jp >> /etc/yum/pluginconf.d/fastestmirror.conf
 
-RUN systemctl disable firewalld
-
 RUN yum install -y epel-release
 RUN yum install -y yum-plugin-priorities wget unzip curl || true
 
