@@ -4,7 +4,7 @@ Samba 4 ActiveDirectory docker container.
 
 # Description
 
-Include centos:7 image.
+Include sonohara/samba4-base:latest image.
 
 # Usage
 
