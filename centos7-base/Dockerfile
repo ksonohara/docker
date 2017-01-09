@@ -4,7 +4,8 @@ MAINTAINER Expert Software Inc. / https://www.e-software.company
 LABEL name="CentOS 7.2.1511" \
       vendor="ExpertSoftware Inc." \
       license="GPLv3" \
-      build-date="20161215"
+      build-date="20170115" \
+      build-tag="1.0.0_1"
 
 # for Japanease
 #RUN yum -y reinstall glibc-common
@@ -19,7 +20,7 @@ RUN echo include_only=.jp >> /etc/yum/pluginconf.d/fastestmirror.conf
 RUN systemctl disable firewalld
 
 RUN yum install -y epel-release
-RUN yum install -y yum-plugin-priorities wget unzip || true
+RUN yum install -y yum-plugin-priorities wget unzip curl || true
 
 RUN yum update -y || true
 

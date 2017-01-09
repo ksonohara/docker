@@ -6,6 +6,12 @@ CentOS 7 base docker container.
 
 Include centos:7 image.
 
+# Changelog
+
+## 1.0.0_1
+
+    Add [ yum install curl ]
+
 # Usage
 
 ## Configuration
