@@ -8,7 +8,7 @@ Include centos:7 image.
 
 # Changelog
 
-## 1.0.0_1
+## 1
 
     Add [ yum install curl ]
 

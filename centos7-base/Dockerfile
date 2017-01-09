@@ -5,7 +5,7 @@ LABEL name="CentOS 7.2.1511" \
       vendor="ExpertSoftware Inc." \
       license="GPLv3" \
       build-date="20170115" \
-      build-tag="1.0.0_1"
+      build-version="1"
 
 # for Japanease
 #RUN yum -y reinstall glibc-common
