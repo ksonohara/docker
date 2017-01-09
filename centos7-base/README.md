@@ -8,7 +8,11 @@ Include centos:7 image.
 
 # Changelog
 
-## 1
+## build-version 2
+
+    From change centos:7.3.1611.
+
+## build-version 1
 
     Add [ yum install curl ]
 
