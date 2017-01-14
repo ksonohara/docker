@@ -1,7 +1,5 @@
 #!/bin/bash
 
-echo DOMAIN=$DNS_DOMAIN >> /etc/sysconfig/network-scripts/ifcfg-ens3
-
 rm -rf /etc/krb5.conf
 rm -rf /etc/samba/smb.conf
 rm -rf /var/lib/samba/private/*

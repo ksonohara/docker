@@ -7,12 +7,12 @@ LABEL name="Samba 4 AD/DC" \
       build-date="2017015" \
       build-tag="1.0.0_0"
 
-RUN sed -i 's@PEERDNS=yes@PEERDNS=no@g' /etc/sysconfig/network-scripts/ifcfg-ens3
-RUN sed -i 's@IPV6_PEERDNS=yes@IPV6_PEERDNS=no@g' /etc/sysconfig/network-scripts/ifcfg-ens3
-RUN sed -i 's@IPV6_AUTOCONF=yes@IPV6_AUTOCONF=no@g' /etc/sysconfig/network-scripts/ifcfg-ens3
-RUN echo DNS1=127.0.0.1 >> /etc/sysconfig/network-scripts/ifcfg-ens3
+#RUN sed -i 's@PEERDNS=yes@PEERDNS=no@g' /etc/sysconfig/network-scripts/ifcfg-ens3
+#RUN sed -i 's@IPV6_PEERDNS=yes@IPV6_PEERDNS=no@g' /etc/sysconfig/network-scripts/ifcfg-ens3
+#RUN sed -i 's@IPV6_AUTOCONF=yes@IPV6_AUTOCONF=no@g' /etc/sysconfig/network-scripts/ifcfg-ens3
+#RUN echo DNS1=127.0.0.1 >> /etc/sysconfig/network-scripts/ifcfg-ens3
 
-RUN cat /etc/sysconfig/network-scripts/ifcfg-ens3
+#RUN cat /etc/sysconfig/network-scripts/ifcfg-ens3
 
 COPY config.txt /.docker/config
 
