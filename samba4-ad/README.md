@@ -46,10 +46,10 @@ Include sonohara/samba4-base:latest image.
     sudo docker run --privileged -it -p 389:389 -d sonohara/samba4-ad \
                 -e "DOCKER_DEBUG=1" \
                 -e "DNS_FORWARD=8.8.8.8" \
-                -e "DNS_DOMAIN=test.local" \
+                -e "DNS_DOMAIN=sambaad.local" \
                 -e "AD_PASSWORD=PASS0rd123" \
-                -e "AD_REALM=test.local" \
-                -e "AD_DOMAIN=TEST"
+                -e "AD_REALM=sambaad.local" \
+                -e "AD_DOMAIN=SAMBAAD"
 
 # Other
 
