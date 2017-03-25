@@ -19,6 +19,8 @@ Include sonohara/samba4-base:latest image.
     AD_REALM sambaad.local
     AD_DOMAIN SAMBAAD
     AD_NOSTRONGAUTH 1
+    AD_HOST_IP ""
+    AD_OPTIONS ""
 
 ### --port
 

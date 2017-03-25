@@ -15,6 +15,8 @@ LABEL name="Samba 4 AD/DC" \
 #RUN cat /etc/sysconfig/network-scripts/ifcfg-ens3
 
 COPY config.txt /.docker/config
+COPY smb-global.txt /.docker/smb-global.conf
+COPY smb-share.txt /.docker/smb-share.conf
 
 COPY init.sh /.docker/init.sh
 COPY setup.sh /.docker/setup.sh
@@ -30,6 +32,8 @@ ENV AD_PASSWORD PASS0rd123
 ENV AD_REALM sambaad.local
 ENV AD_DOMAIN SAMBAAD
 ENV AD_NOSTRONGAUTH 1
+ENV AD_HOST_IP ""
+ENV AD_OPTIONS ""
 
 VOLUME ["/var/lib/samba", "/var/log/samba", "/etc/samba", "/.docker"]
 
