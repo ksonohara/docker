@@ -4,8 +4,9 @@ MAINTAINER Expert Software Inc. / https://www.e-software.company
 LABEL name="Samba 4 AD/DC" \
       vendor="ExpertSoftware Inc." \
       license="GPLv3" \
-      build-date="20170325" \
-      build-tag="1.0.0_2"
+      build-date="20170808" \
+      build-tag="1.0.0_2" \
+      build-version="2"
 
 #RUN sed -i 's@PEERDNS=yes@PEERDNS=no@g' /etc/sysconfig/network-scripts/ifcfg-ens3
 #RUN sed -i 's@IPV6_PEERDNS=yes@IPV6_PEERDNS=no@g' /etc/sysconfig/network-scripts/ifcfg-ens3
