@@ -20,3 +20,5 @@ RUN yum install -y samba45 \
                    samba45-winbind-krb5-locator perl-Parse-Yapp python2-crypto || true
 
 RUN yum clean all | true
+
+VOLUME ["/var/lib/samba", "/var/log/samba", "/etc/samba", "/.docker"]
