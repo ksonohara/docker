@@ -52,7 +52,8 @@ Include sonohara/samba4-base:latest image.
                 -e "AD_PASSWORD=PASS0rd123" \
                 -e "AD_REALM=sambaad.local" \
                 -e "AD_DOMAIN=SAMBAAD" \
-                 -d sonohara/samba4-ad
+                --restart=always \
+                -d sonohara/samba4-ad
 
 # Other
 
