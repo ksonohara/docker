@@ -16,7 +16,7 @@ LABEL name="CentOS 7.4.1708" \
 #RUN rm -f /etc/localtime
 #RUN ln -fs /usr/share/zoneinfo/Asia/Tokyo /etc/localtime
 
-RUN echo include_only=.jp >> /etc/yum/pluginconf.d/fastestmirror.conf
+#RUN echo include_only=.jp >> /etc/yum/pluginconf.d/fastestmirror.conf
 
 RUN yum install -y epel-release
 RUN yum install -y yum-plugin-priorities wget unzip curl || true
