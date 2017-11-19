@@ -1,12 +1,12 @@
-FROM centos:7.3.1611
+FROM centos:7.4.1708
 MAINTAINER Expert Software Inc. / https://www.e-software.company
 
-LABEL name="CentOS 7.3.1611" \
+LABEL name="CentOS 7.4.1708" \
       vendor="ExpertSoftware Inc." \
       license="GPLv3" \
-      build-date="20170808" \
-      build-tag="1.0.0_2" \
-      build-version="2"
+      build-date="20171119" \
+      build-tag="1.0.0_4" \
+      build-version="3"
 
 # for Japanease
 #RUN yum -y reinstall glibc-common
