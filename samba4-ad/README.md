@@ -39,7 +39,6 @@ Include sonohara/samba4-base:latest image.
     /var/lib/samba
     /var/log/samba
     /etc/samba
-    /.docker
 
 ## Examples
 
