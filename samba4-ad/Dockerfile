@@ -36,7 +36,7 @@ ENV AD_NOSTRONGAUTH 1
 ENV AD_HOST_IP ""
 ENV AD_OPTIONS ""
 
-VOLUME ["/var/lib/samba", "/var/log/samba", "/etc/samba", "/.docker"]
+VOLUME ["/var/lib/samba", "/var/log/samba", "/etc/samba"]
 
 EXPOSE 53 135 137/udp 138/udp 139 389 445 464 636
 
